@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1 id="titulo">Formulario de Contato</h1>
+        </header>
+        <section>
+            <div id="container">
+                <form id="formulario" action="/views/dadosForm" method="POST">
+                    <p>
+                        <label for="strNome">Nome:</label>
+                        <input type="text" id="strNome" placeholder="Digite seu nome" required>
+                    </p>
+                    <p>
+                        <label for="strEmail">Email:</label>
+                        <input type="email" id="strEmail" placeholder="Digite seu email" required>
+                    </p>
+                    <p>
+                        <label for="strCelular">Celular:</label>
+                        <input type="text" id="strCelular" placeholder="(xx)9xxxx-xxxx"
+                            pattern="\([0-9]{2}\)9[0-9]{4}-[0-9]{4}" required />
+                    </p>
+                    <p>
+                        <label for="lbllogradouro">Logradouro</label>
+                        <input type="text" id="srtLogradouro" placeholder="Rua / Av. / Pça.">
+                    </p>
+                    <p>
+                        <label for="lblBairro">Bairro</label>
+                        <input type="text" id="strBairro" placeholder="Jd. / Vila">
+                    </p>
+                    <p>
+                        <label for="lblCidade">Cidade</label>
+                        <input type="text" id="strCidade">
+                    </p>
+                    <p>
+                        <label for="lblEstado">Estado</label>
+                        <input type="text" id="strEstado">
+                    </p>
+                    <p>
+                        <label for="lblCEP">CEP</label>
+                        <input type="text" id="strCEP" pattern="[0-9]{5}-[0-9]{3}">
+                    </p>
+                    <p>
+                        <label for="lblDataNasc">Data de nascimento</label>
+                        <input type="date" name="strDataNasc" id="strDataNasc">
+                    </p>
+                    <p>
+                        <label for="lblSenha">Senha</label>
+                        <input type="password" id="strSenha" placeholder="máx. 6 digitos" size="8" maxlength="6">
+                    </p>
+                    <p>
+                        <input type="radio" id="strSexoF" name="strSexo" value="F">
+                        <label for="rdoSexoF">Feminino</label> &nbsp; &nbsp; &nbsp;
+                        <input type="radio" id="strSexoM" name="strSexo" value="M">
+                        <label for="rdoSexoM">Masculino</label>&nbsp; &nbsp; &nbsp;
+                    </p>
+                    <p>
+                    <fieldset>
+                        <legend>Conhecimentos Técnicos</legend>
+                        <input type="checkbox" name="strHTML" id="strHTML" value="HTML">
+                        <label for="chkHTML">Html</label>&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="strCSS" id="strCSS" value="CSS">
+                        <label for="chkCSS">Css</label>&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="strJS" id="strJS" value="JS">
+                        <label for="chkJS">Js</label>&nbsp;&nbsp;&nbsp; 
+                        
+                        <br>
+
+                        <input type="checkbox" name="strJava" id="strJava" value="Java">
+                        <label for="chkJava">Java</label>&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="strNodejs" id="strNodejs" value="Nodejs">
+                        <label for="chkNodejs">Nodejs</label>&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="strPhp" id="strPhp" value="Php">
+                        <label for="chkPhp">Php</label>&nbsp;&nbsp;&nbsp; 
+
+                    </fieldset>
+                    </p>
+                </form>
+                <button type="submit">Enviar Formulario</button>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
